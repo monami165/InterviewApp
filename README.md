@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
+# TO RUN THE PROJECT
+
+1. Download the local JSON server using the command: npm install json-server -g
+2. Navigate to the InterviewApp/src/assets folder and run the command: json-server questions.json
+3. Navigate back up to the InterviewApp folder, and run the command: ng serve -o
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
