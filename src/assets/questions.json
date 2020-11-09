@@ -1,0 +1,12 @@
+{"questions":[
+	{"number":1,"question":"What is the output for − 'you are doing well' [2:999]","a":"you are doing well","b":"' '","c":"'u are doing well'"},	
+    {"number":2,"question":"Pylab is a package that combine _______,________&______ into a single namespace.","a":"Numpy, scipy & matplotlib","b":"Numpy, matplotlib & pandas","c":"Numpy, pandas & matplotlib"},
+    {"number":3,"question":"What is output of following − print(''abbzxyzxzxabb''.count(‘abb’,-10,-1))","a":"2","b":"1","c":"0"},
+    {"number":4,"question":"Which among them is not correct about Recursive Function?","a":"They are much faster than the normal functions.","b":"They can always be replaced by non-recursive functions.","c":"They take more space then the non-recursive functions."},
+    {"number":5,"question":"Which code is used to open a file for binary writing?","a":"'w'","b":"'wb'","c":"'r+'"},
+    {"number":6,"question":"Using the pack manager, how you can you put the components in a container in the same row?","a":"Component.pack(side='LEFT')","b":"Component.pack('Left')","c":"Component.pack(side=LEFT)"},
+    {"number":7,"question":"Which is the special symbol used in python to add comments?","a":"//","b":"$","c":"#"},
+    {"number":8,"question":"What function do you use to read a string?","a":"input('Enter a string')","b":"eval(input('Enter a string'))","c":"enter('Enter a string')"},
+    {"number":9,"question":"What is the result of eval('1 + 3 * 2')?","a":"1 + 3 * 2","b":"7","c":"8"},
+    {"number":10,"question":"_______ is the code in natural language mixed with some program code.","a":"A Python statement","b":"Pseudocode","c":"Python program"}
+]}

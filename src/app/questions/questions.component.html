@@ -1,0 +1,65 @@
+
+<div *ngIf="!flag" style="display: flex;align-items: center;justify-content: center;">
+    <input type="button" class="btn btn-success" [value]="msg" (click)="loadQuestions()"/>
+</div>
+
+<hr>
+
+<div *ngIf="flag">
+    <div *ngFor="let q of questionList" class="card" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">{{q.number}}</h5>
+          <hr>
+          <h6 class="card-subtitle mb-2 text-muted">{{q.question}}</h6>
+          <br>
+            <div>
+                <!-- <div *ngFor="let choice of choices">
+                    <input 
+                    type="radio"
+                    name="{{q.number}}"
+                    value="{{choice}}"
+                    (change)="radioChange($event,q.number,choice)"/>
+                    {{q.choice}}
+                </div> -->
+                <input
+                type="radio"
+                name="{{q.number}}"
+                value="a"
+                (change)="radioChange($event,q.number,'a')"/>
+                {{q.a}}<br>
+                <input
+                type="radio"
+                name="{{q.number}}"
+                value="b"
+                (change)="radioChange($event,q.number,'b')"/>
+                {{q.b}}<br>
+                <input
+                type="radio"
+                name="{{q.number}}"
+                value="c"
+                (change)="radioChange($event,q.number,'c')"/>
+                {{q.c}}<br>
+            </div>
+            <br>
+          <a href="#" class="card-link">Rate this problem!</a>
+          <a href="#" class="card-link">Bad question?</a>
+        </div>
+    </div>
+
+    <hr><br><br>
+
+
+    <div style="display: flex;align-items: center;justify-content: center;">
+        <input type="button" class="btn btn-primary" [value]="msg1" (click)="grade()"/>
+        
+    </div>
+
+    <br><br>
+
+    <div *ngIf="flag2">
+        <div style="display: flex;align-items: center;justify-content: center;">
+            <input type="button" class="btn btn-warning" value="Restart" (click)="reload()">
+        </div>
+    </div>
+
+</div>
